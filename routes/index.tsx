@@ -24,4 +24,4 @@ export default function Home() {
   );
 }
 
-// Prueba gitHub
+// Prueba gitHub 2
