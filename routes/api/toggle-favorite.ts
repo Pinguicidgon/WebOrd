@@ -19,10 +19,10 @@ export const handler: Handlers = {
     }
     const characterIdStr = characterId.toString();
 
-    if (favorites.includes(characterId)) {
-      favorites = favorites.filter(id => id !== characterId);
+    if (favorites.includes(characterIdStr)) {
+      favorites = favorites.filter(id => id !== characterIdStr);
     } else {
-      favorites.push(characterId);
+      favorites.push(characterIdStr);
     }
 
     const headers = new Headers();
