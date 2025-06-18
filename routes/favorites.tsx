@@ -1,5 +1,4 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
-import { parse } from "$std/path/parse.ts";
 import FavoriteButton from "../islands/FavoriteButton.tsx";
 
 interface Character {

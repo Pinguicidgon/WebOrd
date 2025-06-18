@@ -1,5 +1,5 @@
 import { useSignal } from '@preact/signals';
-import { useCallback, useEffect } from 'preact/hooks';
+import { useEffect } from 'preact/hooks';
 
 interface FavoriteButtonProps {
   characterId: string;
@@ -28,7 +28,7 @@ export default function FavoriteButton({ characterId, isFavorite }: FavoriteButt
       if (response.ok) {
         favorite.value = newFavoriteState;
 
-        window.location.reload();
+        globalThis.location.reload();
     }
 } catch (error) {
     console.error('Error toggling favorite:', error);
